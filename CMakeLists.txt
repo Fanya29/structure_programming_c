@@ -3,4 +3,4 @@ project(structure_programming_c)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(structure_programming_c main.cpp Something.cpp)
+add_executable(structure_programming_c main.cpp quadratic_equations.cpp)

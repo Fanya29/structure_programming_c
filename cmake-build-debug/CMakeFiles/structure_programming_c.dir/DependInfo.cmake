@@ -4,10 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/mac/CLionProjects/structure_programming_c/Something.cpp" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/Something.cpp.o"
-  "/Users/mac/CLionProjects/structure_programming_c/main.cpp" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/main.cpp.o"
+  "/Users/mac/CLionProjects/structure_programming_c/main.cpp" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/main.o"
+  "/Users/mac/CLionProjects/structure_programming_c/quadratic_equations.cpp" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/quadratic_equations.o"
+  "/Users/mac/CLionProjects/structure_programming_c/substring_in_string.cpp" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/substring_in_string.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

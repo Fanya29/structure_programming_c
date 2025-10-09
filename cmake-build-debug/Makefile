@@ -143,59 +143,50 @@ structure_programming_c/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/build
 .PHONY : structure_programming_c/fast
 
-Something.o: Something.cpp.o
-
-.PHONY : Something.o
-
 # target to build an object file
-Something.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/Something.cpp.o
-.PHONY : Something.cpp.o
-
-Something.i: Something.cpp.i
-
-.PHONY : Something.i
-
-# target to preprocess a source file
-Something.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/Something.cpp.i
-.PHONY : Something.cpp.i
-
-Something.s: Something.cpp.s
-
-.PHONY : Something.s
-
-# target to generate assembly for a file
-Something.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/Something.cpp.s
-.PHONY : Something.cpp.s
-
-main.o: main.cpp.o
-
+main.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/main.o
 .PHONY : main.o
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
+# target to preprocess a source file
+main.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/main.i
 .PHONY : main.i
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
+# target to generate assembly for a file
+main.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/main.s
 .PHONY : main.s
 
+# target to build an object file
+quadratic_equations.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/quadratic_equations.o
+.PHONY : quadratic_equations.o
+
+# target to preprocess a source file
+quadratic_equations.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/quadratic_equations.i
+.PHONY : quadratic_equations.i
+
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/main.cpp.s
-.PHONY : main.cpp.s
+quadratic_equations.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/quadratic_equations.s
+.PHONY : quadratic_equations.s
+
+# target to build an object file
+substring_in_string.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/substring_in_string.o
+.PHONY : substring_in_string.o
+
+# target to preprocess a source file
+substring_in_string.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/substring_in_string.i
+.PHONY : substring_in_string.i
+
+# target to generate assembly for a file
+substring_in_string.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/substring_in_string.s
+.PHONY : substring_in_string.s
 
 # Help Target
 help:
@@ -206,12 +197,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... structure_programming_c"
-	@echo "... Something.o"
-	@echo "... Something.i"
-	@echo "... Something.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... quadratic_equations.o"
+	@echo "... quadratic_equations.i"
+	@echo "... quadratic_equations.s"
+	@echo "... substring_in_string.o"
+	@echo "... substring_in_string.i"
+	@echo "... substring_in_string.s"
 .PHONY : help
 
 

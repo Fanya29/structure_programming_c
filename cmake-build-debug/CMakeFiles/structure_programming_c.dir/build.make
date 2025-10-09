@@ -77,45 +77,60 @@ include CMakeFiles/structure_programming_c.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/structure_programming_c.dir/flags.make
 
-CMakeFiles/structure_programming_c.dir/main.cpp.o: CMakeFiles/structure_programming_c.dir/flags.make
-CMakeFiles/structure_programming_c.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/structure_programming_c.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/structure_programming_c.dir/main.cpp.o -c /Users/mac/CLionProjects/structure_programming_c/main.cpp
+CMakeFiles/structure_programming_c.dir/main.o: CMakeFiles/structure_programming_c.dir/flags.make
+CMakeFiles/structure_programming_c.dir/main.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/structure_programming_c.dir/main.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/structure_programming_c.dir/main.o -c /Users/mac/CLionProjects/structure_programming_c/main.cpp
 
-CMakeFiles/structure_programming_c.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/structure_programming_c.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/main.cpp > CMakeFiles/structure_programming_c.dir/main.cpp.i
+CMakeFiles/structure_programming_c.dir/main.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/structure_programming_c.dir/main.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/main.cpp > CMakeFiles/structure_programming_c.dir/main.i
 
-CMakeFiles/structure_programming_c.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/structure_programming_c.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/main.cpp -o CMakeFiles/structure_programming_c.dir/main.cpp.s
+CMakeFiles/structure_programming_c.dir/main.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/structure_programming_c.dir/main.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/main.cpp -o CMakeFiles/structure_programming_c.dir/main.s
 
-CMakeFiles/structure_programming_c.dir/Something.cpp.o: CMakeFiles/structure_programming_c.dir/flags.make
-CMakeFiles/structure_programming_c.dir/Something.cpp.o: ../Something.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/structure_programming_c.dir/Something.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/structure_programming_c.dir/Something.cpp.o -c /Users/mac/CLionProjects/structure_programming_c/Something.cpp
+CMakeFiles/structure_programming_c.dir/quadratic_equations.o: CMakeFiles/structure_programming_c.dir/flags.make
+CMakeFiles/structure_programming_c.dir/quadratic_equations.o: ../quadratic_equations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/structure_programming_c.dir/quadratic_equations.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/structure_programming_c.dir/quadratic_equations.o -c /Users/mac/CLionProjects/structure_programming_c/quadratic_equations.cpp
 
-CMakeFiles/structure_programming_c.dir/Something.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/structure_programming_c.dir/Something.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/Something.cpp > CMakeFiles/structure_programming_c.dir/Something.cpp.i
+CMakeFiles/structure_programming_c.dir/quadratic_equations.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/structure_programming_c.dir/quadratic_equations.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/quadratic_equations.cpp > CMakeFiles/structure_programming_c.dir/quadratic_equations.i
 
-CMakeFiles/structure_programming_c.dir/Something.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/structure_programming_c.dir/Something.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/Something.cpp -o CMakeFiles/structure_programming_c.dir/Something.cpp.s
+CMakeFiles/structure_programming_c.dir/quadratic_equations.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/structure_programming_c.dir/quadratic_equations.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/quadratic_equations.cpp -o CMakeFiles/structure_programming_c.dir/quadratic_equations.s
+
+CMakeFiles/structure_programming_c.dir/substring_in_string.o: CMakeFiles/structure_programming_c.dir/flags.make
+CMakeFiles/structure_programming_c.dir/substring_in_string.o: ../substring_in_string.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/structure_programming_c.dir/substring_in_string.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/structure_programming_c.dir/substring_in_string.o -c /Users/mac/CLionProjects/structure_programming_c/substring_in_string.cpp
+
+CMakeFiles/structure_programming_c.dir/substring_in_string.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/structure_programming_c.dir/substring_in_string.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/substring_in_string.cpp > CMakeFiles/structure_programming_c.dir/substring_in_string.i
+
+CMakeFiles/structure_programming_c.dir/substring_in_string.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/structure_programming_c.dir/substring_in_string.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/substring_in_string.cpp -o CMakeFiles/structure_programming_c.dir/substring_in_string.s
 
 # Object files for target structure_programming_c
 structure_programming_c_OBJECTS = \
-"CMakeFiles/structure_programming_c.dir/main.cpp.o" \
-"CMakeFiles/structure_programming_c.dir/Something.cpp.o"
+"CMakeFiles/structure_programming_c.dir/main.o" \
+"CMakeFiles/structure_programming_c.dir/quadratic_equations.o" \
+"CMakeFiles/structure_programming_c.dir/substring_in_string.o"
 
 # External object files for target structure_programming_c
 structure_programming_c_EXTERNAL_OBJECTS =
 
-structure_programming_c: CMakeFiles/structure_programming_c.dir/main.cpp.o
-structure_programming_c: CMakeFiles/structure_programming_c.dir/Something.cpp.o
+structure_programming_c: CMakeFiles/structure_programming_c.dir/main.o
+structure_programming_c: CMakeFiles/structure_programming_c.dir/quadratic_equations.o
+structure_programming_c: CMakeFiles/structure_programming_c.dir/substring_in_string.o
 structure_programming_c: CMakeFiles/structure_programming_c.dir/build.make
 structure_programming_c: CMakeFiles/structure_programming_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable structure_programming_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable structure_programming_c"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/structure_programming_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

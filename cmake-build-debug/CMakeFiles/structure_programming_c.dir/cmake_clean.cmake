@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/structure_programming_c.dir/Something.cpp.o"
-  "CMakeFiles/structure_programming_c.dir/main.cpp.o"
+  "CMakeFiles/structure_programming_c.dir/main.o"
+  "CMakeFiles/structure_programming_c.dir/quadratic_equations.o"
+  "CMakeFiles/structure_programming_c.dir/substring_in_string.o"
   "structure_programming_c"
   "structure_programming_c.pdb"
 )

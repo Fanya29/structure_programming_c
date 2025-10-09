@@ -1,36 +1,40 @@
 #include <stdio.h>
+#include <assert.h>
 
-int substring_count(char *str, char *needle)
-{
-    int sum = 1;
-    const int step = sizeof(&str)/sizeof(str[0]);
-    printf("%i\n", sizeof(str));
-    printf("%i\n", sizeof(&needle));
+int substring_count(char *string, char *substring) {
+    int count = 0;
+    char *str_ptr, *sub_ptr;
 
-    for (int i = 0; i++; sizeof(str))
-    {
-        for (int j = 0; j++; sizeof(needle)) {
-            if (str[i] != needle[j])
-            {
-                break;
-            }
-            if (j == sizeof(&needle))
-            {
-                sum++;
-            }
-        }
+    if (*substring == '\0') {
+        return 0;
     }
-    return sum;
+
+    while (*string != '\0') {
+        str_ptr = string;
+        sub_ptr = substring;
+
+        while (*sub_ptr != '\0' && *str_ptr == *sub_ptr) {
+            str_ptr++;
+            sub_ptr++;
+        }
+
+        if (*sub_ptr == '\0') {
+            count++;
+        }
+
+        string++;
+    }
+
+    return count;
 }
 
-int main(void)
-{
-    char string[10];
-    char needle[10];
+int main() {
+    assert(substring_count("abcabc", "ab") == 2);
+    assert(substring_count("abcabcd", "d") == 1);
+    assert(substring_count("abcabcd", "q") == 0);
+    assert(substring_count("aaaaaa", "aa") == 5);
+    assert(substring_count("", "ab") == 0);
+    assert(substring_count("abc", "") == 0);
 
-    scanf("%s", string);
-    scanf("%s", needle);
-    int res = substring_count(string, needle);
-    printf("%i", res);
     return 0;
 }

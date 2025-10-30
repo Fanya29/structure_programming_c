@@ -5,3 +5,5 @@ CMakeFiles/structure_programming_c.dir/main.o: ../main.cpp
 
 CMakeFiles/structure_programming_c.dir/quadratic_equations.o: ../quadratic_equations.cpp
 
+CMakeFiles/structure_programming_c.dir/substring_in_string.o: ../substring_in_string.cpp
+

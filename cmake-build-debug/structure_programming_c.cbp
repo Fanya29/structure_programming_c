@@ -80,6 +80,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/mac/CLionProjects/structure_programming_c/bubble_sort.c">
+			<Option target="structure_programming_c"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/structure_programming_c/bubble_sort.h">
+			<Option target="structure_programming_c"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/structure_programming_c/bubble_sort_test.c">
+			<Option target="structure_programming_c"/>
+		</Unit>
 		<Unit filename="/Users/mac/CLionProjects/structure_programming_c/main.cpp">
 			<Option target="structure_programming_c"/>
 		</Unit>

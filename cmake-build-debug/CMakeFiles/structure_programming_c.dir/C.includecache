@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mac/CLionProjects/structure_programming_c/bubble_sort/bubble_sort.c
+assert.h
+/Users/mac/CLionProjects/structure_programming_c/bubble_sort/assert.h
+string.h
+-
+stdlib.h
+-
+

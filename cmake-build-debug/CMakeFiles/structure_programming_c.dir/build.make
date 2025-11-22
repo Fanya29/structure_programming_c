@@ -78,17 +78,17 @@ include CMakeFiles/structure_programming_c.dir/progress.make
 include CMakeFiles/structure_programming_c.dir/flags.make
 
 CMakeFiles/structure_programming_c.dir/main.o: CMakeFiles/structure_programming_c.dir/flags.make
-CMakeFiles/structure_programming_c.dir/main.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/structure_programming_c.dir/main.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/structure_programming_c.dir/main.o -c /Users/mac/CLionProjects/structure_programming_c/main.cpp
+CMakeFiles/structure_programming_c.dir/main.o: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/structure_programming_c.dir/main.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/structure_programming_c.dir/main.o   -c /Users/mac/CLionProjects/structure_programming_c/main.c
 
 CMakeFiles/structure_programming_c.dir/main.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/structure_programming_c.dir/main.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/main.cpp > CMakeFiles/structure_programming_c.dir/main.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/structure_programming_c.dir/main.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/main.c > CMakeFiles/structure_programming_c.dir/main.i
 
 CMakeFiles/structure_programming_c.dir/main.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/structure_programming_c.dir/main.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/main.cpp -o CMakeFiles/structure_programming_c.dir/main.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/structure_programming_c.dir/main.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/main.c -o CMakeFiles/structure_programming_c.dir/main.s
 
 CMakeFiles/structure_programming_c.dir/quadratic_equations.o: CMakeFiles/structure_programming_c.dir/flags.make
 CMakeFiles/structure_programming_c.dir/quadratic_equations.o: ../quadratic_equations.cpp
@@ -116,39 +116,39 @@ CMakeFiles/structure_programming_c.dir/substring_in_string.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/structure_programming_c.dir/substring_in_string.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/substring_in_string.cpp -o CMakeFiles/structure_programming_c.dir/substring_in_string.s
 
-CMakeFiles/structure_programming_c.dir/bubble_sort.o: CMakeFiles/structure_programming_c.dir/flags.make
-CMakeFiles/structure_programming_c.dir/bubble_sort.o: ../bubble_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/structure_programming_c.dir/bubble_sort.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/structure_programming_c.dir/bubble_sort.o   -c /Users/mac/CLionProjects/structure_programming_c/bubble_sort.c
+CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o: CMakeFiles/structure_programming_c.dir/flags.make
+CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o: ../bubble_sort/bubble_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o   -c /Users/mac/CLionProjects/structure_programming_c/bubble_sort/bubble_sort.c
 
-CMakeFiles/structure_programming_c.dir/bubble_sort.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/structure_programming_c.dir/bubble_sort.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/bubble_sort.c > CMakeFiles/structure_programming_c.dir/bubble_sort.i
+CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/bubble_sort/bubble_sort.c > CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.i
 
-CMakeFiles/structure_programming_c.dir/bubble_sort.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/structure_programming_c.dir/bubble_sort.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/bubble_sort.c -o CMakeFiles/structure_programming_c.dir/bubble_sort.s
+CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/bubble_sort/bubble_sort.c -o CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.s
 
-CMakeFiles/structure_programming_c.dir/bubble_sort_test.o: CMakeFiles/structure_programming_c.dir/flags.make
-CMakeFiles/structure_programming_c.dir/bubble_sort_test.o: ../bubble_sort_test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/structure_programming_c.dir/bubble_sort_test.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/structure_programming_c.dir/bubble_sort_test.o   -c /Users/mac/CLionProjects/structure_programming_c/bubble_sort_test.c
+CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o: CMakeFiles/structure_programming_c.dir/flags.make
+CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o: ../bubble_sort/bubble_sort_test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o   -c /Users/mac/CLionProjects/structure_programming_c/bubble_sort/bubble_sort_test.c
 
-CMakeFiles/structure_programming_c.dir/bubble_sort_test.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/structure_programming_c.dir/bubble_sort_test.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/bubble_sort_test.c > CMakeFiles/structure_programming_c.dir/bubble_sort_test.i
+CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mac/CLionProjects/structure_programming_c/bubble_sort/bubble_sort_test.c > CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.i
 
-CMakeFiles/structure_programming_c.dir/bubble_sort_test.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/structure_programming_c.dir/bubble_sort_test.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/bubble_sort_test.c -o CMakeFiles/structure_programming_c.dir/bubble_sort_test.s
+CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mac/CLionProjects/structure_programming_c/bubble_sort/bubble_sort_test.c -o CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.s
 
 # Object files for target structure_programming_c
 structure_programming_c_OBJECTS = \
 "CMakeFiles/structure_programming_c.dir/main.o" \
 "CMakeFiles/structure_programming_c.dir/quadratic_equations.o" \
 "CMakeFiles/structure_programming_c.dir/substring_in_string.o" \
-"CMakeFiles/structure_programming_c.dir/bubble_sort.o" \
-"CMakeFiles/structure_programming_c.dir/bubble_sort_test.o"
+"CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o" \
+"CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o"
 
 # External object files for target structure_programming_c
 structure_programming_c_EXTERNAL_OBJECTS =
@@ -156,8 +156,8 @@ structure_programming_c_EXTERNAL_OBJECTS =
 structure_programming_c: CMakeFiles/structure_programming_c.dir/main.o
 structure_programming_c: CMakeFiles/structure_programming_c.dir/quadratic_equations.o
 structure_programming_c: CMakeFiles/structure_programming_c.dir/substring_in_string.o
-structure_programming_c: CMakeFiles/structure_programming_c.dir/bubble_sort.o
-structure_programming_c: CMakeFiles/structure_programming_c.dir/bubble_sort_test.o
+structure_programming_c: CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o
+structure_programming_c: CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o
 structure_programming_c: CMakeFiles/structure_programming_c.dir/build.make
 structure_programming_c: CMakeFiles/structure_programming_c.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable structure_programming_c"

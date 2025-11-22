@@ -6,13 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/mac/CLionProjects/structure_programming_c/main.cpp
-stdio.h
--
-assert.h
--
-string.h
--
-stdlib.h
--
-

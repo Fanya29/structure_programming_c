@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/structure_programming_c.dir/bubble_sort.o"
-  "CMakeFiles/structure_programming_c.dir/bubble_sort_test.o"
+  "CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o"
+  "CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o"
   "CMakeFiles/structure_programming_c.dir/main.o"
   "CMakeFiles/structure_programming_c.dir/quadratic_equations.o"
   "CMakeFiles/structure_programming_c.dir/substring_in_string.o"

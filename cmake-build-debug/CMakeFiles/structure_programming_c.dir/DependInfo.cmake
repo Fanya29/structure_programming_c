@@ -5,8 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/mac/CLionProjects/structure_programming_c/bubble_sort.c" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/bubble_sort.o"
-  "/Users/mac/CLionProjects/structure_programming_c/bubble_sort_test.c" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/bubble_sort_test.o"
+  "/Users/mac/CLionProjects/structure_programming_c/bubble_sort/bubble_sort.c" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o"
+  "/Users/mac/CLionProjects/structure_programming_c/bubble_sort/bubble_sort_test.c" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o"
+  "/Users/mac/CLionProjects/structure_programming_c/main.c" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/main.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 
@@ -14,7 +15,6 @@ set(CMAKE_C_COMPILER_ID "Clang")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/mac/CLionProjects/structure_programming_c/main.cpp" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/main.o"
   "/Users/mac/CLionProjects/structure_programming_c/quadratic_equations.cpp" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/quadratic_equations.o"
   "/Users/mac/CLionProjects/structure_programming_c/substring_in_string.cpp" "/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles/structure_programming_c.dir/substring_in_string.o"
   )

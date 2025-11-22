@@ -144,34 +144,34 @@ structure_programming_c/fast:
 .PHONY : structure_programming_c/fast
 
 # target to build an object file
-bubble_sort.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort.o
-.PHONY : bubble_sort.o
+bubble_sort/bubble_sort.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o
+.PHONY : bubble_sort/bubble_sort.o
 
 # target to preprocess a source file
-bubble_sort.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort.i
-.PHONY : bubble_sort.i
+bubble_sort/bubble_sort.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.i
+.PHONY : bubble_sort/bubble_sort.i
 
 # target to generate assembly for a file
-bubble_sort.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort.s
-.PHONY : bubble_sort.s
+bubble_sort/bubble_sort.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.s
+.PHONY : bubble_sort/bubble_sort.s
 
 # target to build an object file
-bubble_sort_test.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort_test.o
-.PHONY : bubble_sort_test.o
+bubble_sort/bubble_sort_test.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o
+.PHONY : bubble_sort/bubble_sort_test.o
 
 # target to preprocess a source file
-bubble_sort_test.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort_test.i
-.PHONY : bubble_sort_test.i
+bubble_sort/bubble_sort_test.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.i
+.PHONY : bubble_sort/bubble_sort_test.i
 
 # target to generate assembly for a file
-bubble_sort_test.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort_test.s
-.PHONY : bubble_sort_test.s
+bubble_sort/bubble_sort_test.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.s
+.PHONY : bubble_sort/bubble_sort_test.s
 
 # target to build an object file
 main.o:
@@ -227,12 +227,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... structure_programming_c"
-	@echo "... bubble_sort.o"
-	@echo "... bubble_sort.i"
-	@echo "... bubble_sort.s"
-	@echo "... bubble_sort_test.o"
-	@echo "... bubble_sort_test.i"
-	@echo "... bubble_sort_test.s"
+	@echo "... bubble_sort/bubble_sort.o"
+	@echo "... bubble_sort/bubble_sort.i"
+	@echo "... bubble_sort/bubble_sort.s"
+	@echo "... bubble_sort/bubble_sort_test.o"
+	@echo "... bubble_sort/bubble_sort_test.i"
+	@echo "... bubble_sort/bubble_sort_test.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

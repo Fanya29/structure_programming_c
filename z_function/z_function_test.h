@@ -1,0 +1,10 @@
+//
+// Created by mac on 27.11.2025.
+//
+
+#ifndef STRUCTURE_PROGRAMMING_C_Z_FUNCTION_TEST_H
+#define STRUCTURE_PROGRAMMING_C_Z_FUNCTION_TEST_H
+
+int z_function_test();
+
+#endif //STRUCTURE_PROGRAMMING_C_Z_FUNCTION_TEST_H

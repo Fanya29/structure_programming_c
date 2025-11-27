@@ -4,6 +4,7 @@
 #include "quick_sort.h"
 #include <string.h>
 #include <assert.h>
+#include <stdlib.h>
 
 typedef struct {
     int x;
@@ -54,9 +55,9 @@ int struct_compare(const void *a,const void *b){
 void quick_sort_test()
 {
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int sorted_arr[] = {11, 12, 22, 25, 34, 64, 90};
+    int sorted_arr[] = qsort(arr, sizeof(int), 7 * sizeof(int));
     quick_sort(arr, (sizeof(arr) / sizeof(arr[0])), sizeof(arr[0]), int_compare);
-    assert(memcmp(arr, sorted_arr, sizeof(arr[0])) == 0);
+    assert(memcmp(arr, qsort(), sizeof(arr[0])) == 0);
 
     double arr_d[] = {3.14, 2.71, 1.41, 0.57, 9.99};
     double sorted_arr_d[] = {0.57, 1.41, 2.71, 3.14, 9.99};

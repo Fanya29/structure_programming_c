@@ -47,6 +47,5 @@ void quick_sort_partition(void* arr, int low, int high, size_t size, int (*compa
 void quick_sort(void *arr, size_t N, size_t size, int (compare)(const void*, const void*))
 {
     if (N < 1) return;
-
     quick_sort_partition(arr, 0, N - 1, size, compare);
 }

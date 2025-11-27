@@ -10,14 +10,13 @@ void z_function_test()
     const char* substring1 = "aba";
     assert(z_function(substring1, text1) == 4);
 
-
     const char* text2 = "";
     const char* substring2 = "aba";
     assert(z_function(substring2, text2) == 0);
 
     const char* text3 = "ab";
-    const char* substring3 = "aba";
-    assert(z_function(substring3, text3) == 0);
+    const char* substring3 = "";
+    assert(z_function(substring3, text3) == 1);
 
     const char* text4 = "aaaaaaa";
     const char* substring4 = "a";

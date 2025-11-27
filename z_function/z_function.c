@@ -36,19 +36,22 @@ int z_function(char* substring, char* text)
     if (len_text == 0 || len_text < len_substring)
     {
         return 0;
+    } else if (len_substring == 0)
+    {
+        return 1;
     }
 
     char* s_text = malloc(len_substring + 1 + len_text + 1);
-    if (s_text == 0) return 0;
+    if (s_text == NULL) return 0;
 
     strcpy(s_text, substring);
-    s_text[len_substring] = '$';
+    s_text[len_substring] = '\n';
     strcpy(s_text + 1 + len_substring, text);
     s_text[len_substring+1+len_text] = '\0';
 
     int* z = z_function_search(s_text, len_substring + 1 + len_text);
 
-    if (z == 0)
+    if (z == NULL)
     {
         free(s_text);
         return 0;
@@ -66,6 +69,7 @@ int z_function(char* substring, char* text)
     }
     printf("\n");
 
+    free(z);
     free(s_text);
     return found;
 }

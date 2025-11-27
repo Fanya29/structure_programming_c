@@ -14,10 +14,10 @@ int* z_function_search(char* s, size_t N)
         return 0;
     }
 
-    for (int i = 0; i < N; i++){
+    for (int i = 1; i < N; i++){
         int count = 0;
         int ptr = 0;
-        while(z[0 + ptr] == z[i + ptr]){
+        while(s[0 + ptr] == s[i + ptr]){
             count++;
             ptr++;
         }
@@ -42,8 +42,9 @@ int z_function(char* substring, char* text)
     if (s_text == 0) return 0;
 
     strcpy(s_text, substring);
-    strcpy(s_text + len_substring, (const char *) '$');
+    s_text[len_substring] = '$';
     strcpy(s_text + 1 + len_substring, text);
+    s_text[len_substring+1+len_text] = '\0';
 
     int* z = z_function_search(s_text, len_substring + 1 + len_text);
 
@@ -63,6 +64,8 @@ int z_function(char* substring, char* text)
             found++;
         }
     }
+    printf("\n");
 
+    free(s_text);
     return found;
 }

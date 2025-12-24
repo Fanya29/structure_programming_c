@@ -12,7 +12,6 @@ typedef struct {
     size_t rows;
     size_t cols;
     double** data;
-    bool valid;
 } Matrix;
 
 Matrix create_empty();

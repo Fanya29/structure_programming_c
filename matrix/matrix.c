@@ -8,16 +8,15 @@
 
 Matrix create_empty()
 {
-    Matrix m = {0, 0, NULL, false};
+    Matrix m = {0, 0, NULL};
     return m;
 }
 
-static int initialize(Matrix *m, size_t rows, size_t cols)
+static void initialize(Matrix *m, size_t rows, size_t cols)
 {
     if (rows == 0 || cols == 0)
     {
         *m = create_empty();
-        return -1;
     }
 
     double** m_data = calloc(rows, sizeof(double*));
@@ -32,8 +31,6 @@ static int initialize(Matrix *m, size_t rows, size_t cols)
         m->rows = rows;
         m->cols = cols;
         m->data = m_data;
-        m->valid = true;
-        return 0;
     }
 }
 
@@ -91,17 +88,20 @@ void destroy(Matrix *m)
     m->data = NULL;
     m->rows = 0;
     m->cols = 0;
-    m->valid = false;
 }
 
 bool is_valid(Matrix *m)
 {
-    return m->valid;
+    if (m->cols * m->rows == 0)
+    {
+        return false;
+    }
+    return true;
 }
 
 static double matrix_check(Matrix *m, size_t rowIdx, size_t colIdx)
 {
-    if(!m->valid || rowIdx >= m->rows || colIdx >= m->cols)
+    if(!is_valid(m) || rowIdx >= m->rows || colIdx >= m->cols)
     {
         return 0;
     } else {
@@ -155,13 +155,99 @@ void set_zero(Matrix *m)
     set_constants(m, 0);
 }
 
-void resize(Matrix *m, size_t rows, size_t cols)
-{
-    if (rows == 0 || cols == 0)
-    {
-        destroy(m);
-    } else
-    {
 
-    }
+//void resize(Matrix *m, size_t rows, size_t cols)
+//{
+//    if (rows == 0 || cols == 0)
+//    {
+//        destroy(m);
+//    } else
+//    {
+//        for
+//    }
+//}
+
+double plus(double a, double b)
+{
+    return a + b;
 }
+
+double minus(double a, double b)
+{
+    return a - b;
+}
+
+double mult(double a, double b)
+{
+    return a * b;
+}
+double divide(double a, double b)
+{
+    return a / b;
+}
+
+static Matrix arif_func(Matrix *m1, Matrix *m2, double func(double a, double b))
+{
+    if (m2->cols == 1) {
+        assert(is_valid(m1) && is_valid(m2));
+    } else {
+        assert(m1->cols == m2->cols && m1->rows == m2->rows && is_valid(m1) && is_valid(m2));
+    }
+    Matrix res = create(m1->rows, m1->cols);
+    for (size_t i = 0; i < m1->rows; i++) {
+        for (size_t j = 0; j < m1->cols; j++) {
+            if (m2->cols == 1) {
+                res.data[i][j] = func(m1->data[i][j], m2->data[0][0]);
+            } else {
+                res.data[i][j] = func(m1->data[i][j], m2->data[i][j]);
+            }
+        }
+    }
+    return res;
+}
+
+Matrix subtract(Matrix *m1, Matrix *m2)
+{
+    return arif_func(m1, m2, minus);
+}
+
+Matrix add(Matrix *m1, Matrix *m2)
+{
+    return arif_func(m1, m2, plus);
+}
+
+Matrix multiply_scalar(Matrix *m, double val)
+{
+    Matrix m2 = create_const(1, 1, val);
+    return arif_func(m, &m2, mult);
+}
+
+Matrix divide_scalar(Matrix *m, double val)
+{
+    Matrix m2 = create_const(1, 1, val);
+    return arif_func(m, &m2, divide);
+}
+
+Matrix transpose(Matrix *m)
+{
+    assert(is_valid(m));
+    Matrix res = create(m->rows, m->cols);
+    for (size_t i = 0; i < m->rows; i++)
+    {
+        for (size_t j = 0; j < m->cols; j++)
+        {
+            res.data[i][j] = m->data[j][i];
+        }
+    }
+    return res;
+}
+
+double determinant(Matrix *m)
+{
+    assert(is_valid(m));
+
+}
+
+Matrix inverse()
+
+

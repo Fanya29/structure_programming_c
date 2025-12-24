@@ -1,7 +1,4 @@
-#include "bubble_sort/bubble_sort.h"
-#include "stdlib.h"
+//
+// Created by mac on 11.12.2025.
+//
 
-int main()
-{
-    bubble_sort_test();
-}

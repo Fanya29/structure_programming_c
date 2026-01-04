@@ -94,12 +94,12 @@ clean: CMakeFiles/structure_programming_c.dir/clean
 CMakeFiles/structure_programming_c.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_programming_c.dir/build.make CMakeFiles/structure_programming_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target structure_programming_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target structure_programming_c"
 .PHONY : CMakeFiles/structure_programming_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/structure_programming_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/structure_programming_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/CLionProjects/structure_programming_c/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/structure_programming_c.dir/rule

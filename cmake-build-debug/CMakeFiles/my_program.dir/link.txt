@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/my_program.dir/main.c.o CMakeFiles/my_program.dir/bubble_sort/bubble_sort.c.o CMakeFiles/my_program.dir/bubble_sort/bubble_sort_test.c.o  -o my_program 

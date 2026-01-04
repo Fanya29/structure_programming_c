@@ -1,0 +1,10 @@
+//
+// Created by mac on 27.11.2025.
+//
+
+#ifndef STRUCTURE_PROGRAMMING_C_QUICK_SORT_TEST_H
+#define STRUCTURE_PROGRAMMING_C_QUICK_SORT_TEST_H
+
+void quick_sort_test();
+
+#endif //STRUCTURE_PROGRAMMING_C_QUICK_SORT_TEST_H

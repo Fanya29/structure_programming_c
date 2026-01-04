@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort.o"
+  "CMakeFiles/structure_programming_c.dir/bubble_sort/bubble_sort_test.o"
   "CMakeFiles/structure_programming_c.dir/main.o"
   "CMakeFiles/structure_programming_c.dir/quadratic_equations.o"
   "CMakeFiles/structure_programming_c.dir/substring_in_string.o"
@@ -7,6 +9,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/structure_programming_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

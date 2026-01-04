@@ -5,12 +5,13 @@
 #ifndef STRUCTURE_PROGRAMMING_C_MATRIX_TEST_H
 #define STRUCTURE_PROGRAMMING_C_MATRIX_TEST_H
 
-void test_constructors();
-void test_element_access();
-void test_set_operations();
-void test_resize_operations();
-void test_arithmetic();
-void test_matrix_ops();
-void test_determinant_inverse();
+void test_basic_creation(void);
+void test_identity(void);
+void test_arithmetic(void);
+void test_multiply(void);
+void test_transpose(void);
+void test_determinant(void);
+void test_resize(void);
+void test_inverse(void);
 
 #endif //STRUCTURE_PROGRAMMING_C_MATRIX_TEST_H

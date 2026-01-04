@@ -85,7 +85,6 @@ Matrix create_const(size_t rows, size_t cols, double value)
 
 void destroy(Matrix *m)
 {
-    assert(is_valid(m) && m != NULL);
     for(size_t i = 0; i < m->rows; i++)
     {
         free(m->data[i]);
@@ -161,55 +160,33 @@ void set_zero(Matrix *m)
     set_constants(m, 0);
 }
 
-void equal_mat(Matrix *m_set, Matrix *m_get)
-{
-    realloc(m_set, m_get->rows);
-    for (size_t i = 0; i < m_get->rows; i++)
-    {
-        realloc(m_set->data[i], m_get->cols);
-        for (size_t j = 0; j < m_get->cols; j++)
-        {
-            m_set->data[i][j] = m_get->data[i][j];
-        }
-    }
-    destroy(m_get);
-}
-
-void resize(Matrix *m, size_t rows, size_t cols)
+Matrix resize(Matrix *m, size_t rows, size_t cols)
 {
     assert(is_valid(m));
-    if (rows == 0 || cols == 0)
+    Matrix new = create(rows, cols);
+    for (size_t i = 0; i < rows; i++)
     {
-        destroy(m);
-    } else {
-        Matrix res_mat = create_zero(rows, cols);
-        for (size_t i = 0; i < m->rows && i < res_mat.rows; i++)
+        for (size_t j = 0; j < cols; j++)
         {
-            for (size_t j = 0; j < m->cols && j < res_mat.cols; j++)
-            {
-                res_mat.data[i][j] = m->data[i][j];
-            }
+            new.data[i][j] = m->data[i][j];
         }
-        equal_mat(m, &res_mat);
     }
+    return new;
 }
 
-void set_identity_resize(Matrix* mat, size_t rows, size_t cols)
+Matrix set_identity_resize(Matrix* mat, size_t rows, size_t cols)
 {
-    Matrix res = create_identity(rows, cols);
-    equal_mat(mat, &res);
+    return create_identity(rows, cols);
 }
 
-void set_zero_resize(Matrix* mat, size_t rows, size_t cols)
+Matrix set_zero_resize(Matrix* mat, size_t rows, size_t cols)
 {
-    Matrix res = create_zero(rows, cols);
-    equal_mat(mat, &res);
+    return create_zero(rows, cols);
 }
 
-void set_constants_resize(Matrix* mat, size_t rows, size_t cols, double value)
+Matrix set_constants_resize(Matrix* mat, size_t rows, size_t cols, double value)
 {
-    Matrix res = create_const(rows, cols, value);
-    equal_mat(mat, &res);
+    return create_const(rows, cols, value);
 }
 
 double plus(double a, double b)
@@ -280,7 +257,7 @@ Matrix multiply(Matrix *m1, Matrix *m2)
     for (size_t i = 0; i < res.rows; i++){
         for (size_t j = 0; j < res.cols; j++){
             double val = 0;
-            for (size_t k = 0; k < m1->rows; k++){
+            for (size_t k = 0; k < m1->cols; k++){
                 val = val + m1->data[i][k] * m2->data[k][j];
             }
             res.data[i][j] = val;
